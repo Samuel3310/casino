@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 764px;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.25);
+  padding: 2.5rem;
+}
+
+.container .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+}
+.container .inner h1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.container .inner p {
+  max-width: 500px;
+}
+.img_cont {
+  display: flex;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+.img_cont img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.btn__cont {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn__cont a {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+  color: white;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.btn__cont a:nth-of-type(1) {
+  background-color: #2dace5;
+}
+
+.btn__cont a:nth-of-type(2) {
+  background-color: #39b826;
+}
+
+.btn__cont a .fa {
+  font-size: 70px;
+}
+
+@media screen and (max-width < 500px) {
+  .container .inner p {
+    text-align: justify;
+    font-size: 16px;
+  }
+}
